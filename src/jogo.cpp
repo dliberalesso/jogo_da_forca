@@ -1,9 +1,10 @@
 #include "jogo.hpp"
 
-Jogo::Jogo()
+Jogo::Jogo() {}
+
+void Jogo::novoJogo()
 {
   erros = 0;
-  Dicionario meu_dicionario;
   saudacao();
   Palavra resposta = meu_dicionario.buscaPalavra(dificuldade);
   string adivinhe(resposta.getComprimento(), '-');

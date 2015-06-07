@@ -3,12 +3,13 @@
 int main(void)
 {
   char opc = 's';
+  Jogo jogo;
   
   while(opc == 's') {
-    Jogo jogo;
+    jogo.novoJogo();
     cout << "           \tGostaria de jogar novamente? (s|n): ";
     cin >> opc;
-    tolower(opc);
+    opc = tolower(opc);
   }
   
   util::fim();

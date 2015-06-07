@@ -7,11 +7,13 @@ class Jogo
 {
   public:
     Jogo();
+    void novoJogo();
     
   protected:
     int dificuldade;
     int erros;
     vector<char> tentadas;
+    Dicionario meu_dicionario;
   
   private:
     void mostraForca();
